@@ -134,7 +134,7 @@ public class MgzTable extends JTable  implements TableCellRenderer{
 				return lableCounter;
 			}else if(column==1){
 				String txt = value.toString();
-				if(txt.equalsIgnoreCase("TRN")) lableComponent.setForeground(Color.BLUE);
+				if("TRN".equalsIgnoreCase(txt)) lableComponent.setForeground(Color.BLUE);
 				else  lableComponent.setForeground(Color.BLACK);
 				lableComponent.setText(txt);
 				if(isSelected) 
